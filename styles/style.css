@@ -1,1 +1,314 @@
 /* место для вашего кода */
+body {
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 293px;
+  padding: 0 52.52px 0 50px;
+}
+
+.nav-header {
+  display: block;
+  font-size: 18px;
+  flex-shrink: 0;
+  width: 392px;
+  height: 22px;
+  margin-right: 36.5px;
+}
+
+.nav-header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-header ul li {
+  position: relative;
+  padding-left: 19.48px;
+  margin-right: 12.5px;
+  letter-spacing: 0.01em;
+  word-spacing: -0.05em;
+}
+
+.nav-header ul li:first-child {
+  padding-left: 0;
+}
+
+.nav-header ul li:last-child {
+  margin-right: 0;
+}
+
+.nav-header ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.nav-header ul li:first-child::before {
+  display: none;
+}
+
+.contacts-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  width: 236.5px;
+  margin-left: auto;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  line-height: 1.36;
+}
+
+section.cover {
+  position: relative;
+  z-index: 2;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: 0 0 180px 0; 
+  padding: 165px 50px 50px;
+}
+
+section.cover::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.ono-tebe-nado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 100px;
+  color: #ffffff;
+  line-height: 114px;
+  letter-spacing: 30px;
+  margin-bottom: 106px;
+}
+
+.ono-tebe-nado span:first-child {
+  align-self: flex-start;
+}
+
+.ono-tebe-nado span {
+  margin-bottom: 20px;
+  margin-right: -30px;
+}
+
+.ono-tebe-nado span:last-child {
+  align-self: flex-end;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.cover .description {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.cover .description p {
+  word-spacing: 19.8px;
+}
+
+.cover .bet {
+  background: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px #ffffff solid;
+  padding: 12px 32px 11px 31px;
+  margin-left: auto;
+}
+
+.headline-h2 {
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lots {
+  margin: 0 24px 120px 24px;
+}
+
+.lots .headline-h2 {
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots .lots-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lots .lots-cards .lots-card {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+  padding: 48px 40px;
+  width: 334px;
+  height: 596px;
+}
+
+.lots .lots-cards .lots-card.film {
+  background-image: url("../images/card-lot-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.lots .lots-cards .lots-card.book {
+  background-image: url("../images/card-lot-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.lots .lots-cards .lots-card.pictures {
+  background-image: url("../images/card-lot-03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.lots .lots-cards .lots-card .lots-topic {
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: auto;
+  line-height: 1.2;
+  font-style: solid;
+}
+
+.lots .lots-cards .lots-card .lots-description {
+  display: block;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  word-spacing: -0.07em;
+}
+
+.lots .lots-cards .lots-card::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.lots .button-see-more {
+  display: block;
+  margin: 30px 0 0 40px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
+
+.about {
+  display: flex;
+  gap: 72px;
+  margin: 0 24px 180px;
+  padding: 35px 0 0 47px;
+}
+ .about .black-circle {
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border: 1px #000 solid;
+  border-radius: 10rem;
+}
+
+.about .black-circle .logo-white {
+  width: 148px;
+  height: 114px;
+  position: relative;
+  top: 64px;
+  left: 46.48px;
+}
+
+.about .description-auction {
+  width: 693px;
+}
+
+.about .headline-h2 {
+  margin: 101px 0 100px 0;
+}
+
+.about .description-auction .first-p {
+  margin-bottom: 24px;
+}
+
+.about .description-auction p {
+  word-spacing: 0.02em;
+  line-height: 1.2;
+  word-spacing: 0.01em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 180px;
+  padding: 0 50px 0;
+  font-size: 18px;
+}
+
+.footer .socials-ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer .contacts {
+  width: 264.57px;
+  font-style: normal;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+  line-height: 1.38;
+}
+
+.footer .menu-footer-ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .nav-menu-footer {
+  justify-self: center;
+  margin-right: 26px; /*под вопросом*/
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
+
+.footer .icon {
+  width: 48px;
+  height: 48px;
+}
