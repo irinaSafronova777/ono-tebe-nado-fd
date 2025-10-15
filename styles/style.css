@@ -248,7 +248,7 @@
   margin: 101px 0 100px 0;
 }
 
-.about .description-auction .about-text{
+.about .description-auction .about-text {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -286,7 +286,7 @@
 
 .footer .nav-menu-footer {
   justify-self: center;
-  margin-right: 26px; 
+  margin-right: 26px;
   text-underline-offset: 5px;
   text-decoration-thickness: 1px;
 }
