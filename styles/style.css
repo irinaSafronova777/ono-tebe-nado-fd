@@ -168,6 +168,10 @@
   gap: 25px;
 }
 
+.lots__card-list-item {
+  list-style-type: none;
+}
+
 .lots-card {
   display: flex;
   flex-direction: column;
@@ -179,6 +183,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 .lots-card.film {
@@ -200,7 +208,7 @@
   font-weight: bold;
   margin-bottom: auto;
   line-height: 1.2;
-  font-style: solid;
+  text-decoration: underline;
 }
 
 .lots-description {
